@@ -13,28 +13,10 @@ class HelloController
        return new Response (content:'Ola mundo!');
     }
     
-    #[Route('/mamiferos')]
-    public function mamiferos(): Response
+    #[Route('/animal/{slug}')]
+    public function slug($slug=null): Response
     {
-       return new Response (content:'Ola mamiferos!');
-    }
-
-    #[Route('/repteis')]
-    public function repteis(): Response
-    {
-       return new Response (content:'Ola repteis!');
+       return new Response (content:'Olá ' . $slug);
     }
     
-    #[Route('/aves')]
-    public function aves(): Response
-    {
-       return new Response (content:'Ola aves!');
-    }
-
-    #[Route('/peixes')]
-    public function peixes(): Response
-    {
-       return new Response (content:'Ola peixes!');
-    }
-
 }
