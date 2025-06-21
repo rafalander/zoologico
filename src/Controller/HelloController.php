@@ -10,7 +10,7 @@ class HelloController
     #[Route('/')]
     public function index(): Response
     {
-       return new Response (content:'Ola mundo!');
+       return new Response (content:'Bem vindo ao nosso Zoológico');
     }
     
     #[Route('/animal/{slug}')]
