@@ -13,17 +13,28 @@ class HelloController
        return new Response (content:'Ola mundo!');
     }
     
-    #[Route('/dinossauro')]
-    public function dinossauro(): Response
+    #[Route('/mamiferos')]
+    public function mamiferos(): Response
     {
-       return new Response (content:'Ola dinossauro!');
+       return new Response (content:'Ola mamiferos!');
     }
 
-    #[Route('/mamifero')]
-    public function mamifero(): Response
+    #[Route('/repteis')]
+    public function repteis(): Response
     {
-       return new Response (content:'Ola mamifero!');
+       return new Response (content:'Ola repteis!');
     }
     
-}
+    #[Route('/aves')]
+    public function aves(): Response
+    {
+       return new Response (content:'Ola aves!');
+    }
 
+    #[Route('/peixes')]
+    public function peixes(): Response
+    {
+       return new Response (content:'Ola peixes!');
+    }
+
+}
